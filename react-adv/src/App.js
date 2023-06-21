@@ -3,6 +3,12 @@ import React, {useEffect, useState} from "react";
 import Login from "./components/Login/Login";
 import Home from "./components/Home/Home";
 import MainHeader from "./components/MainHeader/MainHeader";
+import Countdown from "./Countdown";
+import DataLoader from "./DataLoader";
+import EventSubscriber from "./EventSubscriber";
+import Form from "./Form";
+import {ThemeChanger} from "./ThemeChanger";
+import Counter from "./Counter";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,6 +38,14 @@ function App() {
                 {!isLoggedIn && <Login onLogin={loginHandler}/>}
                 {isLoggedIn && <Home onLogout={logoutHandler}/>}
             </main>
+            <div>
+                {/*<Countdown/>*/}
+                <DataLoader/>
+                <EventSubscriber/>
+                <Form/>
+                <ThemeChanger/>
+                <Counter/>
+            </div>
         </React.Fragment>
     );
 }
