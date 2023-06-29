@@ -17,6 +17,16 @@ import UserProvider from "./Components/context/changeDataContext/Context";
 import UserProfile from "./Components/context/changeDataContext/UserProfile";
 import TimeAgain from "./Components/useEffect/TimeAgain";
 import Todo from "./Components/useReducer/Todo/Todo";
+import Tooltip from "./Components/useRef/Tooltip";
+import ClickCounter from "./Components/useRef/ClickCounter";
+import NewForwardTimer from "./Components/useImperativeHandle/Timer/Timer";
+import BlockForTimer from "./Components/useImperativeHandle/Timer/BlockForTimer";
+import BlockForForm from "./Components/useImperativeHandle/Form/BlockForForm";
+import Randomizer from "./Components/useEffect/Randomizer";
+import Header from "./Components/context/ThemeContext/Header";
+import ThemeProvider1 from "./Components/context/ThemeContext/ThemeContext";
+import SimpleForm from "./Components/useRef/SimpleForm";
+import ParentCounter from "./Components/useImperativeHandle/Counter/ParentCounter";
 
 function App() {
     return (
@@ -35,9 +45,19 @@ function App() {
                     <NewTimer/>
                     <Notification/>
                     <Main/>
+                    <Tooltip/>
                     <UserProfile/>
                     <TimeAgain/>
                     <Todo/>
+                    <ClickCounter/>
+                    <BlockForTimer/>
+                    <BlockForForm/>
+                    <Randomizer/>
+                    <ThemeProvider1>
+                        <Header/>
+                    </ThemeProvider1>
+                    <SimpleForm/>
+                    <ParentCounter/>
                 </UserProvider>
             </ThemeProvider>
 
