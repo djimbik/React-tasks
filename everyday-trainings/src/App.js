@@ -27,6 +27,10 @@ import Header from "./Components/context/ThemeContext/Header";
 import ThemeProvider1 from "./Components/context/ThemeContext/ThemeContext";
 import SimpleForm from "./Components/useRef/SimpleForm";
 import ParentCounter from "./Components/useImperativeHandle/Counter/ParentCounter";
+import RomanTimer from "./Components/useEffect/romanTimer";
+import RomanCounter from "./Components/useReducer/romanCounter";
+import UserCard from "./Components/context/NewUser/UserCard";
+import UserProfile1 from "./Components/context/NewUser/UserProfile";
 
 function App() {
     return (
@@ -58,6 +62,11 @@ function App() {
                     </ThemeProvider1>
                     <SimpleForm/>
                     <ParentCounter/>
+                    <RomanTimer/>
+                    <RomanCounter/>
+                    <UserProfile1>
+                        <UserCard/>
+                    </UserProfile1>
                 </UserProvider>
             </ThemeProvider>
 
