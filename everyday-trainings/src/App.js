@@ -31,6 +31,9 @@ import RomanTimer from "./Components/useEffect/romanTimer";
 import RomanCounter from "./Components/useReducer/romanCounter";
 import UserCard from "./Components/context/NewUser/UserCard";
 import UserProfile1 from "./Components/context/NewUser/UserProfile";
+import FirstTimer from "./Components/useEffect/firstTimer/FirstTimer";
+import FirstTodo from "./Components/useReducer/first todo/FirstTodo";
+import ModalWindow from "./Components/useRef/ModalWindow";
 
 function App() {
     return (
@@ -67,6 +70,9 @@ function App() {
                     <UserProfile1>
                         <UserCard/>
                     </UserProfile1>
+                    <FirstTimer/>
+                    <FirstTodo/>
+                    <ModalWindow/>
                 </UserProvider>
             </ThemeProvider>
 
