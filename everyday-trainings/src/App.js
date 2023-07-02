@@ -34,6 +34,10 @@ import UserProfile1 from "./Components/context/NewUser/UserProfile";
 import FirstTimer from "./Components/useEffect/firstTimer/FirstTimer";
 import FirstTodo from "./Components/useReducer/first todo/FirstTodo";
 import ModalWindow from "./Components/useRef/ModalWindow";
+import SecondFocus from "./Components/useEffect/secondFocus";
+import MultiLanguage from "./Components/useReducer/dualanguage/MultyLanguage";
+import ChangeLangButton from "./Components/useReducer/dualanguage/ChangeLangButton";
+import {LanguageContextProvider} from "./Components/useReducer/dualanguage/LanguageContext";
 
 function App() {
     return (
@@ -73,6 +77,11 @@ function App() {
                     <FirstTimer/>
                     <FirstTodo/>
                     <ModalWindow/>
+                    <SecondFocus/>
+                    <LanguageContextProvider>
+                        <ChangeLangButton/>
+                        <MultiLanguage/>
+                    </LanguageContextProvider>
                 </UserProvider>
             </ThemeProvider>
 

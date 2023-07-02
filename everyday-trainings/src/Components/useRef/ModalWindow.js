@@ -1,5 +1,4 @@
 import React, {useRef, useState} from 'react';
-import styles from './modalWindow.module.css'
 
 const ModalWindow = () => {
     const modalRef = useRef(null);
@@ -19,12 +18,13 @@ const ModalWindow = () => {
         }
     }
 
+
     return (
         <div>
             <button onClick={openModal}>открыть модальное окно</button>
             {isOpen && (
-                <div className={styles['modal-overlay']} onClick={handleClickOutside}>
-                    <div className={styles.modal} ref={modalRef}>
+                <div className="modal-overlay" onClick={handleClickOutside}>
+                    <div className="modal" ref={modalRef}>
                         <h2>Модальное окно</h2>
                         <p>Содержимое модального окна...</p>
                         <button onClick={closeModal}>Закрыть</button>
