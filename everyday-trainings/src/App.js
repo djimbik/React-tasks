@@ -3,7 +3,6 @@ import {DateTimeComponent} from "./Components/useEffect/DateTimeComponent";
 import Focus from "./Components/useRef/Focus";
 import React from "react";
 import TextInput from "./Components/useRef/Timer";
-import Dropdown from "./Components/useRef/Dropdown";
 import ConsoleTimer from "./Components/useEffect/ConsoleTimer";
 import CounterReducer from "./Components/useReducer/CounterReducer";
 import FormConsole from "./Components/useRef/FormConsole";
@@ -38,6 +37,8 @@ import SecondFocus from "./Components/useEffect/secondFocus";
 import MultiLanguage from "./Components/useReducer/dualanguage/MultyLanguage";
 import ChangeLangButton from "./Components/useReducer/dualanguage/ChangeLangButton";
 import {LanguageContextProvider} from "./Components/useReducer/dualanguage/LanguageContext";
+import ThirdTimer from "./Components/useEffect/thirdTimer/ThirdTimer";
+import ThirdForm from "./Components/useReducer/thirdForm/ThirdForm";
 
 function App() {
     return (
@@ -47,7 +48,6 @@ function App() {
                     <DateTimeComponent/>
                     <Focus/>
                     <TextInput/>
-                    <Dropdown/>
                     <ConsoleTimer/>
                     <CounterReducer/>
                     <FormConsole/>
@@ -82,6 +82,8 @@ function App() {
                         <ChangeLangButton/>
                         <MultiLanguage/>
                     </LanguageContextProvider>
+                    <ThirdTimer/>
+                    <ThirdForm/>
                 </UserProvider>
             </ThemeProvider>
 
