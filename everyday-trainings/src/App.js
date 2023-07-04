@@ -39,6 +39,7 @@ import ChangeLangButton from "./Components/useReducer/dualanguage/ChangeLangButt
 import {LanguageContextProvider} from "./Components/useReducer/dualanguage/LanguageContext";
 import ThirdTimer from "./Components/useEffect/thirdTimer/ThirdTimer";
 import ThirdForm from "./Components/useReducer/thirdForm/ThirdForm";
+import AppForBusinessLogic from "./Components/buisness-logic/AppForBuisnessLogic";
 
 function App() {
     return (
@@ -84,6 +85,7 @@ function App() {
                     </LanguageContextProvider>
                     <ThirdTimer/>
                     <ThirdForm/>
+                    <AppForBusinessLogic/>
                 </UserProvider>
             </ThemeProvider>
 
