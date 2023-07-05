@@ -6,8 +6,9 @@ export const ThemeContext = React.createContext({
     }
 })
 
-const ThemeProvider1 = ({children}) => {
-    const [theme, setTheme] = useState('light');
+export const ThemeContextProvider = ({children}) => {
+    const [theme, setTheme] = useState( 'light');
+    console.log(theme)
 
     const onChangeThemeHandler = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
@@ -16,11 +17,8 @@ const ThemeProvider1 = ({children}) => {
     return (
         <ThemeContext.Provider value={{
             theme: theme,
-            onChangeThemeHandler: onChangeThemeHandler
-        }}>
+            onChangeThemeHandler: onChangeThemeHandler}}>
             {children}
         </ThemeContext.Provider>
-    );
-};
-
-export default ThemeProvider1;
+    )
+}
