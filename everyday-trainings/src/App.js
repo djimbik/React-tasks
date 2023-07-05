@@ -40,6 +40,14 @@ import {LanguageContextProvider} from "./Components/useReducer/dualanguage/Langu
 import ThirdTimer from "./Components/useEffect/thirdTimer/ThirdTimer";
 import ThirdForm from "./Components/useReducer/thirdForm/ThirdForm";
 import AppForBusinessLogic from "./Components/buisness-logic/AppForBuisnessLogic";
+import TooltipApp from "./Components/portals/tooltip/TooltipAPP";
+import './App.css';
+import MainContainer from "./Components/portals/modal/MainContainer";
+import Fithtimer from "./Components/useEffect/fifthTimer/Fithtimer";
+import FithCounter from "./Components/useReducer/fithcounter/FithCounter";
+import Fifthlist from "./Components/useRef/Fifthlist";
+import FifthHeader from "./Components/context/FifthTheme/FifthHeader";
+import {ThemeContextProvider} from "./Components/context/FifthTheme/ThemeContext";
 
 function App() {
     return (
@@ -86,6 +94,14 @@ function App() {
                     <ThirdTimer/>
                     <ThirdForm/>
                     <AppForBusinessLogic/>
+                    <TooltipApp/>
+                    <MainContainer/>
+                    <Fithtimer/>
+                    <FithCounter/>
+                    <Fifthlist/>
+                    <ThemeContextProvider>
+                        <FifthHeader/>
+                    </ThemeContextProvider>
                 </UserProvider>
             </ThemeProvider>
 
