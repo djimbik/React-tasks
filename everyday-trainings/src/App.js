@@ -48,6 +48,10 @@ import FithCounter from "./Components/useReducer/fithcounter/FithCounter";
 import Fifthlist from "./Components/useRef/Fifthlist";
 import FifthHeader from "./Components/context/FifthTheme/FifthHeader";
 import {ThemeContextProvider} from "./Components/context/FifthTheme/ThemeContext";
+import SaveButton from "./Components/useImperativeHandle/SaveButton/SaveButton";
+import BlockForSixthModal from "./Components/portals/sixthModal/BlockForSixthModal";
+import BlockForSixthContext from "./Components/context/Sixth Theme/BlockForSixthContext";
+import {SixthThemeContextProvider} from "./Components/context/Sixth Theme/SixthTheme";
 
 function App() {
     return (
@@ -102,6 +106,11 @@ function App() {
                     <ThemeContextProvider>
                         <FifthHeader/>
                     </ThemeContextProvider>
+                    <SaveButton/>
+                    <BlockForSixthModal/>
+                    <SixthThemeContextProvider>
+                        <BlockForSixthContext/>
+                    </SixthThemeContextProvider>
                 </UserProvider>
             </ThemeProvider>
 
