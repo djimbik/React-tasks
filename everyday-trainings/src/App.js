@@ -18,7 +18,6 @@ import TimeAgain from "./Components/useEffect/TimeAgain";
 import Todo from "./Components/useReducer/Todo/Todo";
 import Tooltip from "./Components/useRef/Tooltip";
 import ClickCounter from "./Components/useRef/ClickCounter";
-import NewForwardTimer from "./Components/useImperativeHandle/Timer/Timer";
 import BlockForTimer from "./Components/useImperativeHandle/Timer/BlockForTimer";
 import BlockForForm from "./Components/useImperativeHandle/Form/BlockForForm";
 import Randomizer from "./Components/useEffect/Randomizer";
@@ -52,6 +51,8 @@ import SaveButton from "./Components/useImperativeHandle/SaveButton/SaveButton";
 import BlockForSixthModal from "./Components/portals/sixthModal/BlockForSixthModal";
 import BlockForSixthContext from "./Components/context/Sixth Theme/BlockForSixthContext";
 import {SixthThemeContextProvider} from "./Components/context/Sixth Theme/SixthTheme";
+import InputFilterForList from "./Components/useEffect/sixthFilter/InputFilterForList";
+import SeventhWindow from "./Components/useEffect/SeventhWindow/SeventhWindow";
 
 function App() {
     return (
@@ -111,6 +112,8 @@ function App() {
                     <SixthThemeContextProvider>
                         <BlockForSixthContext/>
                     </SixthThemeContextProvider>
+                    <InputFilterForList/>
+                    <SeventhWindow/>
                 </UserProvider>
             </ThemeProvider>
 
