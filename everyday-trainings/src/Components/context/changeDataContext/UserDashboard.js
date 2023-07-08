@@ -12,7 +12,7 @@ const UserDashboard = () => {
     return (
         <div>
             <h2>UserDashboard</h2>
-            <p>name: {user.name}</p>
+            {/*<p>name: {user.name}</p>*/}
             <p>role: {user.role} </p>
             <button onClick={handleLogout}>Click!</button>
         </div>
