@@ -6,7 +6,6 @@ import MultiLanguage from "../dualanguage/MultyLanguage";
 import Cart from "../exampleShoppingCart/ShoppingExampleCart";
 import FirstTodo from "../first todo/FirstTodo";
 import ThirdForm from "../thirdForm/ThirdForm";
-import Todo from "../Todo/Todo";
 import ShoppingСart from "../ShoppingCart/ShoppingСart";
 import {ThemeProvider} from "../../context/changeTheme";
 import TaskWrapper from "../../useEffect/BigComponentUseEffect/TaskWrapper";
@@ -14,6 +13,7 @@ import ShoppingCartEight from "../ShoppingCartEight/ShopingCartEight";
 
 const BigComponentUseReducer = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
+        zeroTask: false,
         firstTask: false,
         secondTask: false,
         thirdTask: false,
@@ -76,17 +76,8 @@ const BigComponentUseReducer = () => {
             ),
         },
         {
-            id: 'fifthTask',
-            title: 'Задача 5, тема: useReducer',
-            component: (
-                <div>
-                    <FirstTodo />
-                </div>
-            ),
-        },
-        {
             id: 'sixthTask',
-            title: 'Задача 6, тема: useReducer',
+            title: 'Задача 5, тема: useReducer',
             component: (
                 <div>
                     <ThirdForm />
@@ -94,26 +85,8 @@ const BigComponentUseReducer = () => {
             ),
         },
         {
-            id: 'seventhTask',
-            title: 'Задача 7, тема: useReducer',
-            component: (
-                <div>
-                    <FirstTodo />
-                </div>
-            ),
-        },
-        {
-            id: 'eightTask',
-            title: 'Задача 8, тема: useReducer',
-            component: (
-                <div>
-                    <Todo />
-                </div>
-            ),
-        },
-        {
             id: 'ninthTask',
-            title: 'Задача 9, тема: useReducer',
+            title: 'Задача 6, тема: useReducer',
             component: (
                 <div>
                     <ShoppingСart />
@@ -122,7 +95,7 @@ const BigComponentUseReducer = () => {
         },
         {
             id: 'tenthTask',
-            title: 'Задача 10, тема: useReducer, сложность 75 / 100',
+            title: 'Задача 7, тема: useReducer, сложность 75 / 100',
             component: (
                 <div><ShoppingCartEight/></div>
             ),

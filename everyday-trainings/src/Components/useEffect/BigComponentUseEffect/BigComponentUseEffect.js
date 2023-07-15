@@ -19,6 +19,7 @@ const BigComponentUseEffect = () => {
     })
 
     const toggleTask = (task) => {
+        console.log('test')
         setIsOpenTasks(prevState => ({
             ...prevState,
             [task]: !prevState[task]
