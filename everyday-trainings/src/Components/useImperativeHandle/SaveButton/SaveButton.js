@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import ChildComponent from "./ChildComponent";
 
 const SaveButton = () => {
-    const saveRef = useRef();
+    const saveRef = useRef(null);
 
     const saveValueHandler = () => {
         saveRef.current.save();

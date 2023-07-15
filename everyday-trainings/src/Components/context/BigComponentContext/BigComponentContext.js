@@ -9,11 +9,13 @@ import {SixthThemeContextProvider} from "../Sixth Theme/SixthTheme";
 import BlockForSixthContext from "../Sixth Theme/BlockForSixthContext";
 import ThemeProvider1 from "../ThemeContext/ThemeContext";
 import Header from "../ThemeContext/Header";
-import ClickCounter from "../../useRef/ClickCounter";
 import TaskWrapper from "../../useEffect/BigComponentUseEffect/TaskWrapper";
+import FifteenthHeader from "../fifteenthContext/FifteenthHeader";
+import {FifteenthContextProvider} from "../fifteenthContext/FifteenthContext";
 
 const BigComponentContext = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
+        zeroTask: false,
         firstTask: false,
         secondTask: false,
         thirdTask: false,
@@ -81,6 +83,16 @@ const BigComponentContext = () => {
                     <ThemeProvider1>
                         <Header/>
                     </ThemeProvider1>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('sixthTask')}
+                         isTaskOpen={isOpenTasks.sixthTask}
+                         title={'Задача 6, тема: Context'}>
+                <div>
+                    <FifteenthContextProvider>
+                        <FifteenthHeader/>
+                    </FifteenthContextProvider>
                 </div>
             </TaskWrapper>
         </div>

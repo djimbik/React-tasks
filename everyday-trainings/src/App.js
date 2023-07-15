@@ -5,6 +5,7 @@ import BigComponentUseReducer from "./Components/useReducer/BigComponentUseReduc
 import BigComponentContext from "./Components/context/BigComponentContext/BigComponentContext";
 import BigComponentUseRef from "./Components/useRef/BigComponentUseRef/BigComponentUseRef";
 import BigComponentBusinessLogic from "./Components/buisness-logic/BigComponentBusinessLogic";
+import BigUseImperativeHandle from "./Components/useImperativeHandle/BigUseImperativeHandle/BigUseImperativeHandle";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <BigComponentContext/>
             <BigComponentUseRef/>
             <BigComponentBusinessLogic/>
+            <BigUseImperativeHandle/>
         </div>
     );
 }
