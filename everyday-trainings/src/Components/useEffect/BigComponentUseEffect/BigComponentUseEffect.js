@@ -7,6 +7,7 @@ import SecondFocus from "../secondFocus";
 import InputFilterForList from "../sixthFilter/InputFilterForList";
 import SeventhWindow from "../SeventhWindow/SeventhWindow";
 import TaskWrapper from "./TaskWrapper";
+import SixteenthFilter from "../sixteenthSearch/SixteenthFilter";
 
 const BigComponentUseEffect = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -16,6 +17,7 @@ const BigComponentUseEffect = () => {
         fourthTask: false,
         fifthTask: false,
         sixthTask: false,
+        seventhTask: false,
     })
 
     const toggleTask = (task) => {
@@ -75,6 +77,14 @@ const BigComponentUseEffect = () => {
                          title={'Задача 6, тема: useEffect - ширина и высота окна'}>
                 <div>
                     <SeventhWindow/>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('seventhTask')}
+                         isTaskOpen={isOpenTasks.seventhTask}
+                         title={'Задача 7, тема: useEffect - ширина и высота окна'}>
+                <div>
+                    <SixteenthFilter/>
                 </div>
             </TaskWrapper>
         </div>
