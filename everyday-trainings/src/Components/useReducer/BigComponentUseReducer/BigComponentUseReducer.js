@@ -23,7 +23,8 @@ const BigComponentUseReducer = () => {
         seventhTask: false,
         eightTask: false,
         ninthTask: false,
-        tenthTask: false
+        tenthTask: false,
+        eleventhTask: false,
     })
 
     const toggleTask = (task) => {
@@ -76,7 +77,7 @@ const BigComponentUseReducer = () => {
             ),
         },
         {
-            id: 'sixthTask',
+            id: 'fifthTask',
             title: 'Задача 5, тема: useReducer',
             component: (
                 <div>
@@ -85,7 +86,7 @@ const BigComponentUseReducer = () => {
             ),
         },
         {
-            id: 'ninthTask',
+            id: 'sixthTask',
             title: 'Задача 6, тема: useReducer',
             component: (
                 <div>
@@ -94,10 +95,17 @@ const BigComponentUseReducer = () => {
             ),
         },
         {
-            id: 'tenthTask',
+            id: 'seventhTask',
             title: 'Задача 7, тема: useReducer, сложность 75 / 100',
             component: (
                 <div><ShoppingCartEight/></div>
+            ),
+        },
+        {
+            id: 'eightTask',
+            title: 'Задача 8, тема: useReducer, сложность 70 / 100',
+            component: (
+                <div><SeventeenthTasksList/></div>
             ),
         },
     ];

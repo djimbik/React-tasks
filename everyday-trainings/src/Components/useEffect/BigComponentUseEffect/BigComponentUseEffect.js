@@ -8,6 +8,7 @@ import InputFilterForList from "../sixthFilter/InputFilterForList";
 import SeventhWindow from "../SeventhWindow/SeventhWindow";
 import TaskWrapper from "./TaskWrapper";
 import SixteenthFilter from "../sixteenthSearch/SixteenthFilter";
+import SeventeenthTimer from "../SevententhTimer/SevententhTimer";
 
 const BigComponentUseEffect = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -18,6 +19,7 @@ const BigComponentUseEffect = () => {
         fifthTask: false,
         sixthTask: false,
         seventhTask: false,
+        eighthTask: false,
     })
 
     const toggleTask = (task) => {
@@ -85,6 +87,14 @@ const BigComponentUseEffect = () => {
                          title={'Задача 7, тема: useEffect - ширина и высота окна'}>
                 <div>
                     <SixteenthFilter/>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('eighthTask')}
+                         isTaskOpen={isOpenTasks.eighthTask}
+                         title={'Задача 8, тема: useEffect - таймер обратного отсчета - 70/100'}>
+                <div>
+                    <SeventeenthTimer/>
                 </div>
             </TaskWrapper>
         </div>
