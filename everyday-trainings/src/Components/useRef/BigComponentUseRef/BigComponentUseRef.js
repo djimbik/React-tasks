@@ -9,6 +9,7 @@ import SimpleForm from "../SimpleForm";
 import TextInput from "../Timer";
 import Tooltip from "../Tooltip";
 import TaskWrapper from "../../useEffect/BigComponentUseEffect/TaskWrapper";
+import TwentyNinthTimer from "../TwentyNinthTimer";
 
 const BigComponentUseRef = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -20,7 +21,8 @@ const BigComponentUseRef = () => {
         sixthTask: false,
         seventhTask: false,
         eightTask: false,
-        ninthTask: false
+        ninthTask: false,
+        tenthTask: false,
     })
 
     const toggleTask = (task) => {
@@ -101,6 +103,14 @@ const BigComponentUseRef = () => {
                          title={'Задача 9, тема: useRef'}>
                 <div>
                     <Tooltip/>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('tenthTask')}
+                         isTaskOpen={isOpenTasks.tenthTask}
+                         title={'Задача 10, тема: useRef'}>
+                <div>
+                    <TwentyNinthTimer />
                 </div>
             </TaskWrapper>
         </div>
