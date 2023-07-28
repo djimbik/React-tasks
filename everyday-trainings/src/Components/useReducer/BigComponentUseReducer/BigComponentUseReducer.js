@@ -10,6 +10,7 @@ import ShoppingСart from "../ShoppingCart/ShoppingСart";
 import {ThemeProvider} from "../../context/changeTheme";
 import TaskWrapper from "../../useEffect/BigComponentUseEffect/TaskWrapper";
 import ShoppingCartEight from "../ShoppingCartEight/ShopingCartEight";
+import TwentySixthTodo from "../TwentySixthTodo/TwentySixthTodo";
 
 const BigComponentUseReducer = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -105,7 +106,14 @@ const BigComponentUseReducer = () => {
             id: 'eightTask',
             title: 'Задача 8, тема: useReducer, сложность 70 / 100',
             component: (
-                <div><SeventeenthTasksList/></div>
+                <div><TwentySixthTodo/></div>
+            ),
+        },
+        {
+            id: 'ninthTask',
+            title: 'Задача 9, тема: useReducer, сложность 70 / 100',
+            component: (
+                <div></div>
             ),
         },
     ];
