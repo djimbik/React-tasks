@@ -12,6 +12,8 @@ import Header from "../ThemeContext/Header";
 import TaskWrapper from "../../useEffect/BigComponentUseEffect/TaskWrapper";
 import FifteenthHeader from "../fifteenthContext/FifteenthHeader";
 import {FifteenthContextProvider} from "../fifteenthContext/FifteenthContext";
+import BlockForTwentyNineTheme from "../TwentyNineTheme/BlockForTwentyNineTheme";
+import {ThemeContextProvider29} from "../TwentyNineTheme/TwentyNineTheme";
 
 const BigComponentContext = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -93,6 +95,16 @@ const BigComponentContext = () => {
                     <FifteenthContextProvider>
                         <FifteenthHeader/>
                     </FifteenthContextProvider>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('seventhTask')}
+                         isTaskOpen={isOpenTasks.seventhTask}
+                         title={'Задача 7, тема: Context'}>
+                <div>
+                    <ThemeContextProvider29>
+                        <BlockForTwentyNineTheme/>
+                    </ThemeContextProvider29>
                 </div>
             </TaskWrapper>
         </div>
