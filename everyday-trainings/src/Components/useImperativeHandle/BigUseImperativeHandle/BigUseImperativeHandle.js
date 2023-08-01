@@ -5,6 +5,7 @@ import FifteenCounter from "../FifteenCounter/FifteenCounter";
 import BlockForForm from "../Form/BlockForForm";
 import SaveButton from "../SaveButton/SaveButton";
 import BlockForTimer from "../Timer/BlockForTimer";
+import FirstModalWindow from "../FirstModalWindow/FirstModalWindow";
 
 const BigUseImperativeHandle = () => {
     const [isOpenTasks, setIsOpenTasks] = useState({
@@ -66,6 +67,14 @@ const BigUseImperativeHandle = () => {
                          title={'Задача 5, тема: useImperativeHandle'}>
                 <div>
                     <BlockForTimer/>
+                </div>
+            </TaskWrapper>
+
+            <TaskWrapper onToggle={() => toggleTask('sixthTask')}
+                         isTaskOpen={isOpenTasks.sixthTask}
+                         title={'Задача 6, тема: useImperativeHandle'}>
+                <div>
+                    <FirstModalWindow/>
                 </div>
             </TaskWrapper>
         </div>
