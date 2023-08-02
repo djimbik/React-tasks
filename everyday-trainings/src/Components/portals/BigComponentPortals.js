@@ -5,6 +5,7 @@ import ParentCounter from "../useImperativeHandle/Counter/ParentCounter";
 import BlockForForm from "../useImperativeHandle/Form/BlockForForm";
 import SaveButton from "../useImperativeHandle/SaveButton/SaveButton";
 import BlockForTimer from "../useImperativeHandle/Timer/BlockForTimer";
+import SecondContainer from "./secondModal/SecondContainer";
 
 const BigComponentPortals = () => {
     return (
@@ -15,6 +16,7 @@ const BigComponentPortals = () => {
             <BlockForForm/>
             <SaveButton/>
             <BlockForTimer/>
+            <SecondContainer/>
         </div>
     );
 };
