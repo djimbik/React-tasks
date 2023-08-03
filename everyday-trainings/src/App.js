@@ -7,6 +7,7 @@ import BigComponentUseRef from "./Components/useRef/BigComponentUseRef/BigCompon
 import BigComponentBusinessLogic from "./Components/buisness-logic/BigComponentBusinessLogic";
 import BigUseImperativeHandle from "./Components/useImperativeHandle/BigUseImperativeHandle/BigUseImperativeHandle";
 import BigComponentPortals from "./Components/portals/BigComponentPortals";
+import {BigClassesComponents} from "./Components/classesComponents/BigClassesComponents";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <BigComponentBusinessLogic/>
             <BigUseImperativeHandle/>
             <BigComponentPortals/>
+            <BigClassesComponents/>
         </div>
     );
 }
