@@ -11,6 +11,7 @@ import {BigClassesComponents} from "./Components/classesComponents/BigClassesCom
 import BigComponentErrorBoundaries from "./Components/errorBoundaries/BigComponentErrorBoundaries";
 import BigComponentHttp from "./Components/http-react/BigComponentHTTP";
 import BigComponentUseCallback from "./Components/useCallback/BigComponentUseCallback";
+import BigCustomHooksComponent from "./Components/customsHooks/BigCustomHooksComponent";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
             <BigComponentErrorBoundaries/>
             <BigComponentHttp/>
             <BigComponentUseCallback/>
+            <BigCustomHooksComponent/>
         </div>
     );
 }
